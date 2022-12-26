@@ -2,8 +2,8 @@ FROM debian:stable
 RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1
 ARG ngrokid
 ARG Password
-ENV Password=${Password}
-ENV ngrokid=${ngrokid}
+ENV Password=frm
+ENV ngrokid=2DupaVnNy2dKT4vysztdsLzuPPM_wmsFyrH192kaBGQZNjMB
 RUN apt install openssh-server wget unzip -y > /dev/null 2>&1
 RUN wget -O ngrok.zip https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip > /dev/null 2>&1
 RUN unzip ngrok.zip
