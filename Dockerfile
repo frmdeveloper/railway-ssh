@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM node:latest
 RUN apt update -y > /dev/null 2>&1 && apt upgrade -y > /dev/null 2>&1
 ARG ngrokid
 ARG Password
